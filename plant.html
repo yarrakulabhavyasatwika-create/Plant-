@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verdant — Plant Nursery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="plant.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Ver<span>dant</span></div>
+    <ul>
+      <li><a href="#categories">Shop</a></li>
+      <li><a href="#featured">Plants</a></li>
+      <li><a href="#care">Care Tips</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <button class="nav-btn" id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-left">
+      <span class="hero-tag">🌿 Fresh Arrivals Every Week</span>
+      <h1 class="hero-title">Bring Nature <em>Home</em> With You</h1>
+      <p class="hero-desc">Discover hand-picked, healthy plants grown with love. From indoor tropicals to rare succulents — find your perfect green companion.</p>
+      <div class="hero-btns">
+        <a href="#featured" class="btn-primary">Shop Now</a>
+        <a href="#care" class="btn-ghost">Care Guide</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop" alt="Green plants"/>
+        <span class="hero-img-label">Indoor Plants</span>
+      </div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=400&h=300&fit=crop" alt="Succulents"/>
+        <span class="hero-img-label">Succulents</span>
+      </div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&h=300&fit=crop" alt="Tropical"/>
+        <span class="hero-img-label">Tropical</span>
+      </div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Pots"/>
+        <span class="hero-img-label">Pots & Planters</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Plant Varieties</span></div>
+    <div class="stat"><span class="stat-num">12K+</span><span class="stat-label">Happy Customers</span></div>
+    <div class="stat"><span class="stat-num">98%</span><span class="stat-label">Healthy Delivery</span></div>
+    <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Years Experience</span></div>
+  </div>
+
+  <section class="categories" id="categories">
+    <span class="section-tag">Browse by Type</span>
+    <h2 class="section-title">Find Your Perfect Plant</h2>
+    <p class="section-sub">Whether you're a seasoned plant parent or just starting out, we have something for every space and skill level.</p>
+    <div class="cats-grid">
+      <a class="cat-card" href="#">
+        <div class="cat-img"><img src="https://images.unsplash.com/photo-1502022787737-42e2b8f7f56e?w=400&h=200&fit=crop" alt="Indoor"/></div>
+        <div class="cat-info"><div class="cat-name">Indoor Plants</div><div class="cat-count">120+ varieties</div></div>
+      </a>
+      <a class="cat-card" href="#">
+        <div class="cat-img"><img src="https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400&h=200&fit=crop" alt="Succulents"/></div>
+        <div class="cat-info"><div class="cat-name">Succulents & Cacti</div><div class="cat-count">80+ varieties</div></div>
+      </a>
+      <a class="cat-card" href="#">
+        <div class="cat-img"><img src="https://images.unsplash.com/photo-1478197397631-f8a3e75699fe?w=400&h=200&fit=crop" alt="Outdoor"/></div>
+        <div class="cat-info"><div class="cat-name">Outdoor Garden</div><div class="cat-count">150+ varieties</div></div>
+      </a>
+      <a class="cat-card" href="#">
+        <div class="cat-img"><img src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=400&h=200&fit=crop" alt="Herbs"/></div>
+        <div class="cat-info"><div class="cat-name">Herbs & Edibles</div><div class="cat-count">60+ varieties</div></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="featured" id="featured">
+    <div class="header-row">
+      <div>
+        <span class="section-tag">Bestsellers</span>
+        <h2 class="section-title">Most Loved Plants</h2>
+      </div>
+      <a href="#" class="view-all">View all plants →</a>
+    </div>
+    <div class="plants-grid">
+      <div class="plant-card">
+        <div class="plant-img">
+          <img src="https://images.unsplash.com/photo-1444930694458-01babf71870c?w=400&h=260&fit=crop" alt="Monstera"/>
+          <span class="plant-badge">Bestseller</span>
+        </div>
+        <div class="plant-info">
+          <div class="plant-name">Monstera Deliciosa</div>
+          <div class="plant-sci">Monstera deliciosa</div>
+          <div class="plant-row">
+            <span class="plant-price">₹349</span>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="plant-card">
+        <div class="plant-img">
+          <img src="https://images.unsplash.com/photo-1509587584298-0f3b3a3a1797?w=400&h=260&fit=crop" alt="Peace Lily"/>
+          <span class="plant-badge">Air Purifier</span>
+        </div>
+        <div class="plant-info">
+          <div class="plant-name">Peace Lily</div>
+          <div class="plant-sci">Spathiphyllum wallisii</div>
+          <div class="plant-row">
+            <span class="plant-price">₹249</span>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="plant-card">
+        <div class="plant-img">
+          <img src="https://images.unsplash.com/photo-1520412099551-62b6bafeb5bb?w=400&h=260&fit=crop" alt="Snake Plant"/>
+          <span class="plant-badge">Low Maintenance</span>
+        </div>
+        <div class="plant-info">
+          <div class="plant-name">Snake Plant</div>
+          <div class="plant-sci">Sansevieria trifasciata</div>
+          <div class="plant-row">
+            <span class="plant-price">₹199</span>
+            <button class="add-btn">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="about">
+    <span class="section-tag">Why Verdant</span>
+    <h2 class="section-title">Rooted in Quality & Care</h2>
+    <p class="section-sub" style="color:rgba(245,240,232,0.7); margin-bottom:3rem;">Every plant in our nursery is nurtured with care before it reaches your home.</p>
+    <div class="features-grid">
+      <div class="feature"><span class="feature-icon">🌱</span><h3>Hand-Picked Quality</h3><p>Every plant is individually inspected and selected by our expert horticulturists.</p></div>
+      <div class="feature"><span class="feature-icon">🚚</span><h3>Safe Delivery</h3><p>Specially designed eco-packaging ensures your plants arrive healthy and happy.</p></div>
+      <div class="feature"><span class="feature-icon">💧</span><h3>Care Guidance</h3><p>Detailed care instructions and ongoing support from our plant experts.</p></div>
+      <div class="feature"><span class="feature-icon">♻️</span><h3>Eco Conscious</h3><p>Sustainably grown using organic methods, zero harmful pesticides.</p></div>
+    </div>
+  </section>
+
+  <section class="care" id="care">
+    <div class="care-grid">
+      <div class="care-img">
+        <img src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?w=600&h=520&fit=crop" alt="Plant care"/>
+        <div class="care-img-badge">
+          <strong>15+</strong>
+          Years of Expertise
+        </div>
+      </div>
+      <div>
+        <span class="section-tag">Plant Care</span>
+        <h2 class="section-title">Simple Tips for Happy Plants</h2>
+        <p class="section-sub">Great plants start with great care. Follow these basics and watch your greenery thrive.</p>
+        <div class="tips-list">
+          <div class="tip">
+            <div class="tip-icon">☀️</div>
+            <div class="tip-text"><h4>Right Light</h4><p>Most houseplants thrive in bright, indirect sunlight. Avoid harsh direct rays that can scorch leaves.</p></div>
+          </div>
+          <div class="tip">
+            <div class="tip-icon">💧</div>
+            <div class="tip-text"><h4>Water Wisely</h4><p>Check soil moisture before watering. Overwatering is the #1 cause of plant problems — when in doubt, don't.</p></div>
+          </div>
+          <div class="tip">
+            <div class="tip-icon">🌡️</div>
+            <div class="tip-text"><h4>Temperature & Humidity</h4><p>Most tropical plants love warmth and humidity. Keep away from AC vents and cold drafts.</p></div>
+          </div>
+          <div class="tip">
+            <div class="tip-icon">🪴</div>
+            <div class="tip-text"><h4>Repot When Ready</h4><p>When roots start peeking out the bottom, it's time for a bigger home. Spring is ideal repotting season.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <span class="section-tag">Reviews</span>
+    <h2 class="section-title" style="margin-bottom:3rem;">What Our Plant Parents Say</h2>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p class="test-text">My Monstera arrived in perfect condition, beautifully packed. It's been three months and it's thriving! Will definitely order again from Verdant.</p>
+        <div class="test-author">
+          <div class="test-avatar"><img src="https://i.pravatar.cc/44?img=5" alt=""/></div>
+          <div><div class="test-name">Priya Sharma</div><div class="test-role">Plant Enthusiast, Bangalore</div></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p class="test-text">The care guide that came with my succulents was incredibly helpful. As a beginner, I finally feel confident about keeping plants alive!</p>
+        <div class="test-author">
+          <div class="test-avatar"><img src="https://i.pravatar.cc/44?img=12" alt=""/></div>
+          <div><div class="test-name">Arjun Menon</div><div class="test-role">First-time Plant Parent, Chennai</div></div>
+        </div>
+      </div>
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p class="test-text">I've ordered from many nurseries online, but Verdant's quality is unmatched. The plants are healthy, the packaging is eco-friendly, and delivery was fast.</p>
+        <div class="test-author">
+          <div class="test-avatar"><img src="https://i.pravatar.cc/44?img=9" alt=""/></div>
+          <div><div class="test-name">Sneha Reddy</div><div class="test-role">Home Gardener, Hyderabad</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="newsletter">
+    <h2>Get Plant Tips & Exclusive Offers 🌿</h2>
+    <p>Join 12,000+ plant lovers. Weekly care tips, new arrivals, and special discounts.</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Enter your email address" id="newsletter-input"/>
+      <button id="subscribe-btn">Subscribe</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Ver<span>dant</span></div>
+        <p>Your trusted plant nursery, bringing nature into your home since 2009. Grown with love, delivered with care.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Indoor Plants</a></li>
+          <li><a href="#">Succulents</a></li>
+          <li><a href="#">Outdoor Plants</a></li>
+          <li><a href="#">Herbs</a></li>
+          <li><a href="#">Pots & Planters</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Plant Care Guide</a></li>
+          <li><a href="#">Delivery Info</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">hello@verdant.in</a></li>
+          <li><a href="#">+91 98765 43210</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Verdant Plant Nursery. Made with 🌿 and love.</div>
+  </footer>
+
+  <script src="plant.js"></script>
+</body>
+</html>
